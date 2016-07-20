@@ -1,0 +1,108 @@
+html, body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding-top: 50px;
+  }
+  
+h1 {
+	font-family: Courier New, serif;
+	color: Darkolivegreen;
+	vertical-align:-50px;
+	font-size: 50px;
+}
+
+.title {
+	font-size: 60px;
+}
+
+h3 {
+	font-family: Courier New, serif;
+	color: darkolivegreen;
+	font-size: 20px;
+}  
+p {
+	padding-bottom: 20px;
+}
+  
+a:link {
+	color: #1B1F1F;
+	text-decoration: none;
+}
+a:visited {
+	color: #1B1F1F;
+	text-decoration: none;
+}
+a:hover {
+	color: #202525;
+	text-decoration: none;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    
+}
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #90EE90;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.gallery {
+	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/51/17/90/5117908f2bd3aa0e0aaf4f2655cd8bfa.jpg);
+	background-position: center top;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-item {
+	border: 5px solid ;
+}
+
+.contacts {
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy3IKqws54s-Yu5GlvrhLKVQA2t18KQs2d56UdylC-VPm5zt-y);
+	background-position: center top;
+	background-size: cover;
+}
+
+.news {
+	background-image: url(http://images.all-free-download.com/images/graphiclarge/concept_geometric_shapes_background_vector_536424.jpg);
+	background-position: center top;
+	background-size: cover;
+}
