@@ -5,14 +5,20 @@ html, body {
   font-weight: 300;
   line-height: 1.5;
   text-align: center;
+  background: url(https://s-media-cache-ak0.pinimg.com/736x/51/17/90/5117908f2bd3aa0e0aaf4f2655cd8bfa.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
 
 body {
 	font-family: 'Lato', sans-serif;
 	margin: 0;
 	padding-top: 50px;
   }
-  
+
 h1 {
 	font-family: Courier New, serif;
 	color: Darkolivegreen;
@@ -28,11 +34,11 @@ h3 {
 	font-family: Courier New, serif;
 	color: darkolivegreen;
 	font-size: 20px;
-}  
+}
 p {
 	padding-bottom: 20px;
 }
-  
+
 a:link {
 	color: #1B1F1F;
 	text-decoration: none;
@@ -42,16 +48,34 @@ a:visited {
 	text-decoration: none;
 }
 a:hover {
-	color: #202525;
+	color: #e514bd;
 	text-decoration: none;
 }
 
 a {
     display: block;
     padding: 8px;
-    
+
 }
-  
+a1:link {
+	color: #1B1F1F;
+	text-decoration: none;
+}
+a1:visited {
+	color: #1B1F1F;
+	text-decoration: none;
+}
+a1:hover {
+	color: #1B1F1F;
+	text-decoration: none;
+}
+
+a1 {
+    display: block;
+    padding: 8px;
+    font-size: 30px
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -63,18 +87,18 @@ ul {
     width: 100%;
 }
 
-li {
+li a1{
     display: inline;
     float: left;
 }
-li a {
+li a1 {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover {
+li a1:hover {
     background-color: #90EE90;
 }
 
@@ -83,9 +107,6 @@ li a:hover {
 }
 
 .gallery {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/51/17/90/5117908f2bd3aa0e0aaf4f2655cd8bfa.jpg);
-	background-position: center top;
-	background-size: cover;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
