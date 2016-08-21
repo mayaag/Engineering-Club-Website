@@ -1,6 +1,33 @@
 <html>
 <head> <title> Engineering Projects </title>
 <link  type="text/css" rel="stylesheet" href="engstylesheet.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script> // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+  </script>
 </head>
 
 <body>
@@ -20,11 +47,20 @@
 <div class="gallery">
 		<img class="thumbnail" src="https://s-media-cache-ak0.pinimg.com/564x/d7/5a/8c/d75a8c95f2eaca8c4bc2eff3405d1de5.jpg"/>
 </div>
-<TABLE BORDER=3 CELLSPACING=3 CELLPADDING=3>
-  <caption>Important Dates<caption>
-<TR>
-<TD COLSPAN="7" ALIGN=center><B>August 2016</B></TD>
-</TR>
+
+<TABLE class= "augustTable" BORDER=3 CELLSPACING=3 CELLPADDING=3>
+  <caption text-align:center>Important Dates<caption>
+<tr>
+<th class="noBorder" colspan="1"><button class="ltarrowBtn"><span1>&#x2770;</span1></button></th>
+<th COLSPAN="5" Align=center>August 2016</th>
+<th class="noBorder" colspan="1"><button class="rtarrowBtn"><span2>&#x2771;</span2></button></th>
+</tr>
+<script>
+document.getElementsByClassName("ltarrowBtn").onclick = function() {myFunction()};
+function myFunction() {
+    document.getElementById("ltarrowBtn").innerHTML = "YOU CLICKED ME!";
+}
+</script>
 <TR>
 <TD ALIGN=center>Sun</TD>
 <TD ALIGN=center>Mon</TD>
@@ -46,7 +82,8 @@
 <TR>
 <TD ALIGN=center>7</TD>
 <TD ALIGN=center>8</TD>
-<TD ALIGN=center>9</TD>
+<TD ALIGN=center>9
+  <p>Club meeting at 6:30 P.M. at Sophia's house</p></TD>
 <TD ALIGN=center>10</TD>
 <TD ALIGN=center>11</TD>
 <TD ALIGN=center>12</TD>
@@ -64,10 +101,10 @@
 <TR>
 <TD ALIGN=center>21</TD>
 <TD ALIGN=center>22
-  <p>First Day of School</p>
-</TD>
+  <p>First Day of School</p></TD>
 <TD ALIGN=center>23</TD>
-<TD ALIGN=center>24</TD>
+<TD ALIGN=center>24
+  <p>Club and Activity fair! We have a table.</p> </TD>
 <TD ALIGN=center>25</TD>
 <TD ALIGN=center>26</TD>
 <TD ALIGN=center>27</TD>
@@ -145,5 +182,6 @@
 </TR>
 
 </TABLE>
+
 </body>
 </html>
