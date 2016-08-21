@@ -13,6 +13,8 @@ body {
 	padding-top: 50px;
   }
   
+
+  
 h1 {
 	font-family: Courier New, serif;
 	color: Darkolivegreen;
@@ -61,18 +63,22 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1; /* bring to front */
+    
 }
 
 li {
     display: inline;
     float: left;
 }
+
 li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; /* no bullets */
+    transition: background-color 0.75s;
 }
 li a:hover {
     background-color: #90EE90;
@@ -82,17 +88,10 @@ li a:hover {
     background-color: #4CAF50;
 }
 
-.gallery {
-	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/51/17/90/5117908f2bd3aa0e0aaf4f2655cd8bfa.jpg);
+.projects {
+	background-image: url(https://s-media-cache-ak0.pinimg.com/originals/c9/50/2e/c9502eecefd4c3cb6aa9cffb8e8cc195.jpg);
 	background-position: center top;
 	background-size: cover;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.gallery-item {
-	border: 5px solid ;
 }
 
 .contacts {
@@ -105,4 +104,93 @@ li a:hover {
 	background-image: url(http://images.all-free-download.com/images/graphiclarge/concept_geometric_shapes_background_vector_536424.jpg);
 	background-position: center top;
 	background-size: cover;
+}
+
+
+.gallery {
+	background-image: url(http://www.wallpapers4u.org/wp-content/uploads/spots_circles_faded_background_51763_1364x768.jpg);
+	background-position: center top;
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.gallery-image {
+	border: 5px groove tan;
+	background-color: black;
+	overflow: hidden;
+	object-fit: cover;
+	
+
+}
+
+.thumbnail {
+	opacity: 1;
+	
+}
+.thumbnail:hover {
+	opacity: 0.25;
+}
+
+.gallery-image img {
+	object-fit: cover;
+	max-width: 100%;
+  
+	-moz-transition: all 0.75s;
+	-webkit-transition: all 0.75s;
+	 transition: all 0.75s;
+}
+.gallery-image:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.gallery-pic-vertical {
+	margin: 10px 0;
+	width: 200px;
+	height: auto;
+}
+.gallery-pic-regular {
+	margin: 10px 0;
+	width: 300px;
+	height: auto;
+}
+
+
+/* tests */
+
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+#photos {
+   /* Prevent vertical gaps */
+   line-height: 1;
+   
+   -webkit-column-count: 2;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    2;
+   -moz-column-gap:      0px;
+   column-count:         2;
+   column-gap:           0px;
+}
+
+
+.words {
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+    background: red;
+    transition: width 2s, height 4s, font 2s;
+    margin: 0 auto;
+}
+
+.words:hover {
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
 }
